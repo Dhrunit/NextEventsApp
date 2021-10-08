@@ -1,6 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-
+import EventList from '../components/events/eventList'
+import { getFeaturedEvents } from '../dummy-data'
 export default function HomePage() {
-	return <div>Dhrunits</div>
+	const featuredEvents = getFeaturedEvents()
+	return (
+		<div>
+			<EventList items={featuredEvents} />
+		</div>
+	)
 }
