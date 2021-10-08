@@ -7,7 +7,7 @@ export default function EventItem(props) {
 	const { title, image, location, date, id } = props
 	return (
 		<li className={classes.item}>
-			<img src={`localhost:3000/${image}`} alt='image' />
+			<img src={image} alt='image' />
 			<div className={classes.content}>
 				<div className={classes.summary}>
 					<h2>{title}</h2>
